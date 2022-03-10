@@ -1,0 +1,27 @@
+# Use root/example as user/password credentials
+version: "3.1"
+
+services:
+  app:
+    build: .
+    environment:
+      HOST_MYSQL: db
+      MYSQL_PASSWORD: example
+      MYSQL_DATABASE: teste
+      PORT_MYSQL: 3306
+      MYSQL_USER: root
+      TELEGRAM_BOT_KEY: Colocar o token do bot
+      TELEGRAM_GROUP: Colocar o id do grupo
+    depends_on:
+      - db
+    restart: on-failure
+
+  db:
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+      MYSQL_DATABASE: teste
+    ports:
+      - 3306:3306
