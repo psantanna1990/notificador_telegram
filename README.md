@@ -6,4 +6,4 @@ Projeto que fica rodando e caso haja uma alteração em uma tabela no banco de d
 
 Para rodara o projeto:
 
-1 - criar um bot usando o (Telegram Bot father)[https://core.telegram.org/bots]
+1 - [criar um bot usando o Telegram Bot father](https://core.telegram.org/bots)
