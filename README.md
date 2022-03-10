@@ -11,8 +11,9 @@ Projeto que fica rodando e caso haja uma alteração em uma tabela no banco de d
 
 2 - Criar um grupo no Telegram  e adicionar o bot criado no passo anterior
 
-3 - Setar as variáveis de ambiente no docker-compose.yaml
+3 - Descobrir o ID do grupo chamando a seguinte api do telegram: `` https://api.telegram.org/bot<YourBOTToken>/getUpdates`` 
 
+3 - Setar as variáveis de ambiente no docker-compose.yaml
 
 4 - executar o comando a partir da raiz do projeto:
     ``
